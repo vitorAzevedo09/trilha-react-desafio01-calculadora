@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 
 interface InputProps {
   value: string;
@@ -6,7 +7,7 @@ interface InputProps {
   placeholder?: string;
 }
 
-const Input = ({ value, onChange, placeholder = "Type something..." }: InputProps) => {
+const Input = ({ value, onChange, placeholder = "" }: InputProps) => {
   return (
     <input
       type="text"

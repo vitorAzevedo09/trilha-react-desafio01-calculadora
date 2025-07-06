@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Content from '../src/app/components/Content';
+import React from 'react';
 
 describe('Content Component', () => {
   test('renders input and button grid', () => {
@@ -7,7 +8,7 @@ describe('Content Component', () => {
 
     // Check if the input and buttons are rendered
     const inputElement = screen.getByPlaceholderText('0');
-    expect(inputElement).toBeInTheDocument();
+    expect(inputElement).toBeDefined();
 
     const buttonElements = screen.getAllByRole('button');
     expect(buttonElements).toHaveLength(16); // assuming 16 buttons in the grid

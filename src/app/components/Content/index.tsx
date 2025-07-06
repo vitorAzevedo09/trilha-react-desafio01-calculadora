@@ -4,6 +4,7 @@ import { useState } from 'react';
 import ButtonGrid from '../ButtonGrid';
 import Input from '../Input';
 import { calculate } from '../../utils/calculate';
+import React from 'react';
 
 const Content = () => {
   const [currentNumber, setCurrentNumber] = useState('');

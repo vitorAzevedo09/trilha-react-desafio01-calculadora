@@ -1,5 +1,8 @@
 import Row from '../Row';
 
+
+import React from 'react';
+
 interface ButtonGridProps {
   onInput: (value: string) => void;
   onClear: () => void;
@@ -13,7 +16,7 @@ const ButtonGrid = ({ onInput, onClear, onEquals }: ButtonGridProps) => {
         buttons={[
           { label: '*', onClick: () => onInput('*') },
           { label: '/', onClick: () => onInput('/') },
-          { label: 'c', onClick: onClear },
+          { label: 'C', onClick: onClear },
           { label: '.', onClick: () => onInput('.') },
         ]}
       />
